@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WickedRideDemo/Scenes/LoginScene/LoginViewModel.swift"
+            timestampString = "552680419.920469"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "loginAction"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__ObjC.TWTRSession&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in variable initialization expression of WickedRideDemo.LoginViewModel.loginAction : (Swift.Optional&lt;__ObjC.TWTRSession&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
+                  moduleName = "WickedRideDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/coffeebeans/Downloads/wickedride/WickedRideDemo/WickedRideDemo/Scenes/LoginScene/LoginViewModel.swift"
+                  timestampString = "552576309.354171"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "2632">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;__ObjC.AuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__ObjC.TWTRSession&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in variable initialization expression of WickedRideDemo.LoginViewModel.loginAction : (Swift.Optional&lt;__ObjC.TWTRSession&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
+                  moduleName = "WickedRideDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/coffeebeans/Downloads/wickedride/WickedRideDemo/WickedRideDemo/Scenes/LoginScene/LoginViewModel.swift"
+                  timestampString = "552576309.355942"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WickedRideDemo/Scenes/LoginScene/LoginViewModel.swift"
+            timestampString = "552680419.920541"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "loginAction"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;__ObjC.AuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__ObjC.TWTRSession&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in variable initialization expression of WickedRideDemo.LoginViewModel.loginAction : (Swift.Optional&lt;__ObjC.TWTRSession&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
+                  moduleName = "WickedRideDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/coffeebeans/Downloads/wickedride/WickedRideDemo/WickedRideDemo/Scenes/LoginScene/LoginViewModel.swift"
+                  timestampString = "552576309.371093"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "312">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;WickedRideDemo.ChatRoomsModel&gt;) -&gt; () in closure #2 (Swift.Optional&lt;__ObjC.AuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__ObjC.TWTRSession&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in variable initialization expression of WickedRideDemo.LoginViewModel.loginAction : (Swift.Optional&lt;__ObjC.TWTRSession&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
+                  moduleName = "WickedRideDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/coffeebeans/Downloads/wickedride/WickedRideDemo/WickedRideDemo/Scenes/LoginScene/LoginViewModel.swift"
+                  timestampString = "552576309.373063"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WickedRideDemo/Scenes/LoginScene/LoginViewModel.swift"
+            timestampString = "552680419.920596"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "loginAction"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WickedRideDemo/NetworkManager/NetworkHandler.swift"
+            timestampString = "552680419.9206491"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "updateUserDetailsInModels(_:chatRoomModel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WickedRideDemo/NetworkManager/NetworkHandler.swift"
+            timestampString = "552680419.9210089"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "updateUserDetailsInModels(_:chatRoomModel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WickedRideDemo/NetworkManager/NetworkHandler.swift"
+            timestampString = "552680419.921281"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "addUserDataInFirebase(withData:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WickedRideDemo/Scenes/LoginScene/LoginViewModel.swift"
+            timestampString = "552680419.9215519"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "loginAction"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WickedRideDemo/NetworkManager/NetworkHandler.swift"
+            timestampString = "552680419.921608"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "fetchInitialMessages(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WickedRideDemo/NetworkManager/NetworkHandler.swift"
+            timestampString = "552680419.92187"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "fetchInitialMessages(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WickedRideDemo/NetworkManager/NetworkHandler.swift"
+            timestampString = "552680419.922134"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "updateUserDetailsInModels(_:chatRoomModel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="WickedRideDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitterbird" translatesAutoresizingMaskIntoConstraints="NO" id="YgC-NS-eD2">
+                                <rect key="frame" x="155" y="281" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YgC-NS-eD2" secondAttribute="height" multiplier="1:1" id="SmY-uh-A3u"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2751734301" green="0.75879206320000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YgC-NS-eD2" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-30" id="Btc-PS-FDW"/>
+                            <constraint firstItem="YgC-NS-eD2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="7:72" id="F7c-gz-7Us"/>
+                            <constraint firstItem="YgC-NS-eD2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Lza-iX-olU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginViewModel" destination="Jfn-68-vS6" id="1Ei-JF-gU0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="Jfn-68-vS6" customClass="LoginViewModel" customModule="WickedRideDemo" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="79" y="134"/>
+        </scene>
+        <!--Chat Rooms View Controller-->
+        <scene sceneID="rz0-wD-GX5">
+            <objects>
+                <viewController storyboardIdentifier="ChatRoomsViewController" id="slF-of-4S9" customClass="ChatRoomsViewController" customModule="WickedRideDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vJB-Jt-Ddi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dkg-I3-mb9">
+                                <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="slF-of-4S9" id="RJ4-RY-mxH"/>
+                                    <outlet property="delegate" destination="slF-of-4S9" id="UDt-Ie-ezK"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direct Messages" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVJ-w2-4w4">
+                                <rect key="frame" x="16" y="50" width="121" height="20"/>
+                                <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0P-dL-dfa">
+                                <rect key="frame" x="207" y="45" width="30" height="30"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ict-AX-5Er">
+                                <rect key="frame" x="247" y="45" width="110" height="30"/>
+                                <color key="backgroundColor" red="0.2751734301" green="0.75879206320000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="CH4-hP-dmm"/>
+                                    <constraint firstAttribute="height" constant="30" id="sys-KA-Ja1"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="New Message">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="12" name="GujaratiSangamMN-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dkg-I3-mb9" firstAttribute="leading" secondItem="RgC-lZ-7Zz" secondAttribute="leading" id="39n-cU-hYe"/>
+                            <constraint firstItem="Dkg-I3-mb9" firstAttribute="bottom" secondItem="RgC-lZ-7Zz" secondAttribute="bottom" id="3TV-XJ-IVI"/>
+                            <constraint firstItem="ict-AX-5Er" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JVJ-w2-4w4" secondAttribute="trailing" constant="10" id="3YC-bD-O8X"/>
+                            <constraint firstItem="ict-AX-5Er" firstAttribute="centerY" secondItem="A0P-dL-dfa" secondAttribute="centerY" id="R2L-XQ-WD2"/>
+                            <constraint firstItem="Dkg-I3-mb9" firstAttribute="trailing" secondItem="RgC-lZ-7Zz" secondAttribute="trailing" id="UZh-Ys-p4P"/>
+                            <constraint firstItem="RgC-lZ-7Zz" firstAttribute="trailing" secondItem="ict-AX-5Er" secondAttribute="trailing" constant="18" id="XF2-c1-D3e"/>
+                            <constraint firstItem="JVJ-w2-4w4" firstAttribute="leading" secondItem="RgC-lZ-7Zz" secondAttribute="leading" constant="16" id="b7L-Ku-Q8k"/>
+                            <constraint firstItem="Dkg-I3-mb9" firstAttribute="top" secondItem="JVJ-w2-4w4" secondAttribute="bottom" constant="30" id="bYa-je-ga6"/>
+                            <constraint firstItem="A0P-dL-dfa" firstAttribute="height" secondItem="ict-AX-5Er" secondAttribute="height" id="cK8-35-C0Q"/>
+                            <constraint firstItem="ict-AX-5Er" firstAttribute="leading" secondItem="A0P-dL-dfa" secondAttribute="trailing" constant="10" id="fC4-bH-T2g"/>
+                            <constraint firstItem="JVJ-w2-4w4" firstAttribute="top" secondItem="RgC-lZ-7Zz" secondAttribute="top" constant="30" id="gPu-uY-NXF"/>
+                            <constraint firstItem="A0P-dL-dfa" firstAttribute="centerY" secondItem="JVJ-w2-4w4" secondAttribute="centerY" id="hPY-fQ-HJp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RgC-lZ-7Zz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KIK-1K-OXe"/>
+                    <connections>
+                        <outlet property="chatListingTableView" destination="Dkg-I3-mb9" id="XLO-Op-Xjg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y6k-f1-5bh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="133.5832083958021"/>
+        </scene>
+        <!--Chat Detail View Controller-->
+        <scene sceneID="irx-za-JGr">
+            <objects>
+                <viewController storyboardIdentifier="ChatDetailViewController" id="5TA-A3-bnP" customClass="ChatDetailViewController" customModule="WickedRideDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k1O-2n-B3V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="G46-5U-hBI">
+                                <rect key="frame" x="0.0" y="100" width="375" height="507"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-1" translatesAutoresizingMaskIntoConstraints="NO" id="vLU-hc-882">
+                                <rect key="frame" x="118" y="30" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="hfR-ZK-yY7"/>
+                                    <constraint firstAttribute="width" constant="60" id="loE-6k-eCa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQK-0P-uck">
+                                <rect key="frame" x="188" y="30" width="40.5" height="20"/>
+                                <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbb-0c-Y7W">
+                                <rect key="frame" x="188" y="50" width="40.5" height="14"/>
+                                <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="10"/>
+                                <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJX-vg-C53">
+                                <rect key="frame" x="24" y="50" width="15" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="AtN-bc-uuL"/>
+                                    <constraint firstAttribute="height" constant="20" id="hgJ-Bj-NcV"/>
+                                </constraints>
+                                <state key="normal" image="backArrow"/>
+                                <connections>
+                                    <action selector="onClickBack:" destination="5TA-A3-bnP" eventType="touchUpInside" id="gfk-Gk-oUw"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fhk-HZ-soL">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gtP-x7-kfn">
+                                        <rect key="frame" x="16" y="15" width="247" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMX-sk-vXa">
+                                        <rect key="frame" x="285" y="12.5" width="80" height="35"/>
+                                        <color key="backgroundColor" red="0.27490627765655518" green="0.75733345746994019" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="mJx-rf-n87"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="16"/>
+                                        <state key="normal" title="Send">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.77133521980998832" green="0.88199465697893953" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="gtP-x7-kfn" firstAttribute="centerY" secondItem="Fhk-HZ-soL" secondAttribute="centerY" id="7Ya-Fx-seC"/>
+                                    <constraint firstItem="PMX-sk-vXa" firstAttribute="leading" secondItem="gtP-x7-kfn" secondAttribute="trailing" constant="22" id="IaF-KL-mnY"/>
+                                    <constraint firstAttribute="trailing" secondItem="PMX-sk-vXa" secondAttribute="trailing" constant="10" id="Nf8-ax-Ohb"/>
+                                    <constraint firstItem="gtP-x7-kfn" firstAttribute="leading" secondItem="Fhk-HZ-soL" secondAttribute="leading" constant="16" id="azF-n4-oer"/>
+                                    <constraint firstAttribute="height" constant="60" id="bBf-Zn-lOf"/>
+                                    <constraint firstItem="PMX-sk-vXa" firstAttribute="centerY" secondItem="gtP-x7-kfn" secondAttribute="centerY" id="n1f-AQ-Jz3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="G46-5U-hBI" firstAttribute="trailing" secondItem="VUm-Ff-iOK" secondAttribute="trailing" id="0a8-Zh-LYw"/>
+                            <constraint firstItem="Fhk-HZ-soL" firstAttribute="trailing" secondItem="G46-5U-hBI" secondAttribute="trailing" id="4Bk-Jq-UJp"/>
+                            <constraint firstItem="Fhk-HZ-soL" firstAttribute="top" secondItem="G46-5U-hBI" secondAttribute="bottom" id="NkO-H4-niq"/>
+                            <constraint firstItem="tbb-0c-Y7W" firstAttribute="top" secondItem="YQK-0P-uck" secondAttribute="bottom" id="QXk-Nw-Ec6"/>
+                            <constraint firstItem="YQK-0P-uck" firstAttribute="leading" secondItem="VUm-Ff-iOK" secondAttribute="centerX" id="R2Z-Zf-lK0"/>
+                            <constraint firstItem="tbb-0c-Y7W" firstAttribute="trailing" secondItem="YQK-0P-uck" secondAttribute="trailing" id="S5E-LA-rBA"/>
+                            <constraint firstItem="YQK-0P-uck" firstAttribute="leading" secondItem="vLU-hc-882" secondAttribute="trailing" constant="10" id="TuP-yh-qKU"/>
+                            <constraint firstItem="YQK-0P-uck" firstAttribute="top" secondItem="vLU-hc-882" secondAttribute="top" id="Wgs-GD-KT6"/>
+                            <constraint firstItem="vLU-hc-882" firstAttribute="top" secondItem="VUm-Ff-iOK" secondAttribute="top" constant="10" id="XK4-ty-Hwg"/>
+                            <constraint firstItem="tbb-0c-Y7W" firstAttribute="leading" secondItem="YQK-0P-uck" secondAttribute="leading" id="Zh2-94-iKN"/>
+                            <constraint firstItem="BJX-vg-C53" firstAttribute="centerY" secondItem="vLU-hc-882" secondAttribute="centerY" id="bKa-SQ-zu3"/>
+                            <constraint firstItem="Fhk-HZ-soL" firstAttribute="bottom" secondItem="VUm-Ff-iOK" secondAttribute="bottom" id="guB-Tg-dcE"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YQK-0P-uck" secondAttribute="trailing" constant="20" id="nDs-1G-Mea"/>
+                            <constraint firstItem="G46-5U-hBI" firstAttribute="top" secondItem="vLU-hc-882" secondAttribute="bottom" constant="10" id="paU-gj-qbI"/>
+                            <constraint firstItem="G46-5U-hBI" firstAttribute="leading" secondItem="VUm-Ff-iOK" secondAttribute="leading" id="vSa-Iu-RTJ"/>
+                            <constraint firstItem="Fhk-HZ-soL" firstAttribute="leading" secondItem="G46-5U-hBI" secondAttribute="leading" id="xgY-ob-NbY"/>
+                            <constraint firstItem="BJX-vg-C53" firstAttribute="leading" secondItem="VUm-Ff-iOK" secondAttribute="leading" constant="24" id="z3O-fr-K1I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VUm-Ff-iOK"/>
+                    </view>
+                    <connections>
+                        <outlet property="chatDetailTableView" destination="G46-5U-hBI" id="kkI-Bx-wjR"/>
+                        <outlet property="nameLabel" destination="YQK-0P-uck" id="Tla-EQ-6ys"/>
+                        <outlet property="profilePhotoIImageView" destination="vLU-hc-882" id="vBD-Tl-Z9P"/>
+                        <outlet property="twitterHandleLabel" destination="tbb-0c-Y7W" id="s8j-JE-sXb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQv-s5-vBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1748" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backArrow" width="30" height="40"/>
+        <image name="placeholder-1" width="120" height="120"/>
+        <image name="twitterbird" width="120" height="100"/>
+    </resources>
+</document>

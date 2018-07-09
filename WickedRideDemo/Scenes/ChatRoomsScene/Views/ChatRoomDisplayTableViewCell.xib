@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatRoomDisplayTableViewCell" id="KGk-i7-Jjw" customClass="ChatRoomDisplayTableViewCell" customModule="WickedRideDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="87.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-1" translatesAutoresizingMaskIntoConstraints="NO" id="UU9-qQ-PMK">
+                        <rect key="frame" x="16" y="11" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="UU9-qQ-PMK" secondAttribute="height" multiplier="1:1" id="FtM-1M-zP8"/>
+                            <constraint firstAttribute="height" constant="60" id="Kvh-0l-wZw"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZn-2Y-dB4">
+                        <rect key="frame" x="81" y="11" width="41.5" height="35"/>
+                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6f-oW-vcc">
+                        <rect key="frame" x="130.5" y="11" width="31" height="16"/>
+                        <fontDescription key="fontDescription" name="Thonburi-Light" family="Thonburi" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2c8-Ep-TUb">
+                        <rect key="frame" x="81" y="46" width="287" height="21"/>
+                        <fontDescription key="fontDescription" name="Thonburi-Light" family="Thonburi" pointSize="16"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzG-JX-oA6">
+                        <rect key="frame" x="379" y="26" width="15" height="16"/>
+                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="12"/>
+                        <color key="textColor" red="0.68230181932449341" green="0.68238282203674316" blue="0.68226456642150879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="L6f-oW-vcc" firstAttribute="top" secondItem="ZZn-2Y-dB4" secondAttribute="top" id="1Cg-os-8xi"/>
+                    <constraint firstItem="UU9-qQ-PMK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="ADV-eF-sVD"/>
+                    <constraint firstItem="ZZn-2Y-dB4" firstAttribute="leading" secondItem="UU9-qQ-PMK" secondAttribute="trailing" constant="5" id="H6d-1Z-4Hx"/>
+                    <constraint firstItem="L6f-oW-vcc" firstAttribute="leading" secondItem="ZZn-2Y-dB4" secondAttribute="trailing" constant="8" id="K1h-Ao-DUq"/>
+                    <constraint firstItem="2c8-Ep-TUb" firstAttribute="leading" secondItem="ZZn-2Y-dB4" secondAttribute="leading" id="MdM-qG-M64"/>
+                    <constraint firstItem="2c8-Ep-TUb" firstAttribute="top" secondItem="ZZn-2Y-dB4" secondAttribute="bottom" id="ULU-Cr-x6f"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="2c8-Ep-TUb" secondAttribute="bottom" constant="10" id="VzK-BH-uBY"/>
+                    <constraint firstItem="DzG-JX-oA6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="Wg7-kp-kzU"/>
+                    <constraint firstItem="DzG-JX-oA6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="L6f-oW-vcc" secondAttribute="trailing" constant="10" id="isa-t2-Cbu"/>
+                    <constraint firstAttribute="trailing" secondItem="DzG-JX-oA6" secondAttribute="trailing" constant="20" id="neh-kD-pHS"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="2c8-Ep-TUb" secondAttribute="trailing" constant="30" id="she-GP-HGs"/>
+                    <constraint firstItem="UU9-qQ-PMK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="xSq-9Y-Gav"/>
+                    <constraint firstItem="ZZn-2Y-dB4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="xke-Xp-nmq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lastMessageLabel" destination="2c8-Ep-TUb" id="rtQ-df-0Bj"/>
+                <outlet property="nameLabel" destination="ZZn-2Y-dB4" id="Pnk-YN-GXA"/>
+                <outlet property="timeLabel" destination="DzG-JX-oA6" id="c3c-nd-X19"/>
+                <outlet property="twitterHandleLabel" destination="L6f-oW-vcc" id="ye2-16-hYN"/>
+                <outlet property="userImageView" destination="UU9-qQ-PMK" id="QHO-gS-nbV"/>
+            </connections>
+            <point key="canvasLocation" x="122" y="84"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder-1" width="120" height="120"/>
+    </resources>
+</document>
